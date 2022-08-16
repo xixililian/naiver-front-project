@@ -1,0 +1,16 @@
+{
+    "name": "replacename_wxapp",
+    "version": "1.0.0",
+    "description": "小程序",
+    "main": "app.js",
+    "directories": {},
+    "scripts": {},
+    "keywords": [ "小程序" ],
+    "author": "331665593@qq.com",
+    "license": "ISC",
+    "devDependencies": {
+        "gulp": "^4.0.2",
+        "gulp-rename": "^2.0.0",
+        "gulp-sass": "^5.0.0"
+    }
+}

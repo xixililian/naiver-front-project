@@ -1,0 +1,423 @@
+/* 改变主题色变量 */
+$--color-primary: #FD9A17;
+$--color-success: #2DA641;
+$--color-warning: #ED6A0C;
+$--color-danger : #D40000;
+
+/* 改变 icon 字体路径变量，必需 */
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+
+@import "~element-ui/packages/theme-chalk/src/index";
+
+/*
+	这个文件用于本项目的 elementui 样式的全局修改
+	都是更具 Ui 图进行重制的。
+*/
+
+// 对话框定制
+// .el-dialog__header,
+// .el-message-box__header {
+// 	padding-top: 16px;
+// 	padding-bottom: 16px;
+// 	padding-right: 50px;
+// 	border-bottom: 1px solid #EBEDF0;
+// }
+// .el-dialog__title,
+// .el-message-box__title {
+// 	font-size: 16px;
+// 	font-weight: bold;
+// }
+// .el-dialog__body {
+// 	max-height: 50vh;
+// 	// min-height: 300px;
+// 	overflow-y: auto;
+// 	overflow-x: hidden;
+// }
+// .el-dialog__footer {
+// 	padding: 16px 20px;
+// 	border-top: 1px solid #EBEDF0;
+// }
+// .el-message-box__content {
+// 	padding-bottom: 20px;
+// }
+// .el-checkbox__input.is-checked+.el-checkbox__label {
+// 	color: inherit;
+// }
+
+// // 将主要按钮（primary）的颜色改为渐变的金色，无边框，以及适当变更hover状态
+// .el-table--small,
+// .el-button--small,
+// .el-input--small {
+// 	font-size: 14px;
+// }
+
+// .el-button--small,
+// .el-switch {
+// 	height: 32px;
+// }
+
+// .el-radio-group,
+// .el-checkbox-group {
+// 	display: flex;
+// 	flex-wrap: wrap;
+// 	align-items: center;
+// 	min-height: 32px;
+
+// 	.el-checkbox,
+// 	.el-radio {
+// 		line-height: 32px;
+// 	}
+// }
+// .el-radio__input.is-checked .el-radio__inner {
+// 	background-color: unset;
+
+// 	&::after {
+// 		width: 8px;
+// 		height: 8px;
+// 		background-color: #FD9A17;
+// 	}
+// }
+// .el-radio__input.is-checked + .el-radio__label {
+// 	color: inherit;
+// }
+
+// .el-select .el-icon-arrow-up:before {
+// 	content: "\e78f";
+// 	color: #646566;
+// }
+
+// .el-button--small {
+// 	box-sizing: border-box;
+
+// 	&.el-button--primary {
+// 		background: linear-gradient(270deg, #FFC151 0%, #FD9A17 100%);
+		
+// 		// 取消边框之后加上1内边距 原来的值是 9px 15px
+// 		border: 0;
+// 		vertical-align: top;
+		
+// 		&:hover {
+// 			background: linear-gradient(270deg, #FDAF51 0%, #FD9A17 100%);
+	
+// 		}
+// 	}
+// }
+
+
+// /*
+// 	添加了类名 private 的 el-form，在下面进行定制
+// */
+// .private-form-wrapper,
+// .el-form.private {
+
+// 	// 输入框、选择框的宽度
+// 	$basic_width: 128px;
+// 	$space_width: 8px;
+
+// 	.el-form-item__content {
+// 		display: flex;
+
+// 		> .el-input,
+// 		> .el-textarea,
+// 		> .el-select,
+// 		> .el-switch {
+// 			flex-shrink: 1;
+// 			& ~ .el-input,
+// 			& ~ .el-select,
+// 			& ~ span {
+// 				margin-left: $space_width;
+// 			}
+// 		}
+
+// 		.hint {
+// 			font-size: 12px;
+// 			color: darkgray;
+// 		}
+// 	}
+// 	.el-form-item.wrap .el-form-item__content {
+// 		flex-wrap: wrap;
+// 	}
+
+// 	&.el-form--inline .el-form-item__content,
+// 	.el-form--inline .el-form-item__content {
+// 		display: inline-flex;
+// 	}
+
+
+// 	.width1 {  // 单个宽度
+// 		width: $basic_width;
+// 	}
+
+// 	.width1h {  // 1.5倍宽度
+// 		width: 1.5 * $basic_width + .5 * $space_width;
+// 	}
+
+// 	.width2 {  // 两倍宽度
+// 		width: 2 * $basic_width + 1 * $space_width;
+// 	}
+
+// 	.width3 {  // 三倍宽度
+// 		width: 3 * $basic_width + 2 * $space_width;
+// 	}
+
+// 	.width4 {  // 四倍宽度
+// 		width: 4 * $basic_width + 3 * $space_width;
+// 	}
+
+// 	.width5 {  // 五倍宽度
+// 		width: 5 * $basic_width + 4 * $space_width;
+// 	}
+// }
+
+// .el-form.private {
+
+// 	// 表单域的垂直间距
+// 	.el-form-item {
+// 		margin-bottom: 16px;
+// 	}
+
+// 	// 没有标题的表单上边距64px (外层已有16的内边距)
+// 	&.as-page > .el-form-item:first-child {
+// 		// margin-top: 48px;
+// 		margin-top: 8px;
+// 	}
+
+// 	// 同时在外层抵消最后行的 margin-bottom
+// 	&.el-form--inline {
+// 		margin-bottom: -16px;
+// 	}
+
+// }
+
+// // 上标签和表单控件之间的距离
+// .el-form--label-top .el-form-item__label {
+// 	padding-bottom: 4px;
+// }
+
+// .el-input-group__prepend {
+// 	background-color: white;
+// }
+
+// /*
+// 	设置表格的样式
+// */
+
+// .el-table {
+// 	&:nth-child(n+2) {
+// 		margin-top: 16px;
+// 	}
+
+// 	th { // 表头的字体颜色、背景色
+// 		color: black;
+// 		background-color: #F4F7FA;
+// 		height: 48px;
+// 	}
+// }
+
+
+// /*
+// 	页面布局
+// */
+// .page {
+// 	min-height: calc(100% - 32px);
+// 	margin: 16px;
+// 	background-color: white;
+// 	overflow-y: auto;
+// }
+
+// .list-page {
+// 	height: calc(100% - 32px)
+// }
+
+// .page--list {
+// 	position: relative;
+// 	height: 100%;
+// }
+
+// .set--bottom-foot-padding {
+// 	padding-bottom: 56px;
+// }
+
+// // .list-page {
+// // 	// position: relative;
+// // 	padding: 16px 16px 30px;
+// // 	height: 100%;
+// // 	overflow-y: auto;
+// // }
+
+// .el-pager li.active {
+// 	min-width: 32px;
+// 	background: linear-gradient(270deg, #FFC151 0%, #FD9A17 100%);
+// 	color: white;
+// 	border-radius: 4px;
+// }
+
+
+// /*
+// 	表格的多选框，对齐
+// 	.page选择器只为增加权重
+// */
+// .el-table-column--selection .cell {
+// 	padding-left: 10px;
+// 	padding-right: 10px;
+// }
+
+
+// /*
+// 	下拉框横向滚动条，隐藏
+// */
+// .el-select-dropdown__wrap {
+// 	margin-bottom: -17px !important;
+// }
+
+// /*
+// 	新增图标 “+” 加粗
+// */
+// .el-icon-plus {
+// 	font-weight: bold;
+// }
+
+// /*
+// 	高级搜索按钮图标，导出按钮图标
+// */
+// .el-icon-more,
+// .el-icon-advance,
+// .el-icon-upload2 {
+// 	&::before {
+// 		content: "";
+// 	}
+// 	width: 16px;
+// 	height: 16px;
+// 	vertical-align: middle;
+// 	position: relative;
+// 	top: -1px;
+// }
+
+// .el-icon-more {
+// 	background: url(../../images/more.png) center no-repeat;
+// }
+
+// .el-icon-advance {
+// 	background: url(../../images/advance.png) center no-repeat;
+// }
+
+// .el-icon-upload2 {
+// 	background: url(../../images/export.png) center no-repeat;
+// }
+
+
+// // 快速操作的弹窗：列表页中的可编辑状态，更多操作等
+// .operate-box {
+// 	padding: 5px 0;
+
+// 	li {
+// 		padding: 7px 20px;
+// 		cursor: pointer;
+
+// 		&:hover,
+// 		&.active {
+// 			background-color: #f5f7fa;
+// 		}
+// 		&.active {
+// 			color: #CC934C;
+// 			font-weight: bold;
+// 		}
+// 	}
+// }
+
+
+
+// .upload-tip {
+// 	font-size: 12px;
+// 	color: darkorange;
+// }
+
+// // 图片预览图层高于elment弹出层（200）
+// div.hevue-imgpreview-wrap {
+// 	z-index: 3000;
+// }
+
+// // 高级搜索
+// div.el-drawer {
+//     overflow: visible;
+// }
+// .el-drawer__body,
+// .advance-search {
+//     height: 100%;
+// }
+// .advance-search {
+//     $padding-width: 20px;
+
+//     h3 {
+//         padding-left: $padding-width;
+//         line-height: 3;
+//         font-size: 20px;
+//         font-weight: bold;
+//         box-shadow: 0 1px rgba($color: #000000, $alpha: .08);
+//     }
+//     > .el-icon-close {
+//         $heigit: 34px;
+//         position: absolute;
+//         left: -$heigit;
+//         top: 13px;
+//         width: $heigit;
+//         height: $heigit;
+//         background-color: white;
+//         border-radius: 10px 0 0 10px;
+//         text-align: center;
+//         line-height: $heigit;
+//         font-size: 20px;
+//         cursor: pointer;
+//     }
+
+//     .el-form {
+//         height: calc(100% - 120px);
+//         padding: 0 $padding-width;
+//         position: relative;
+//         overflow-y: auto;
+//     }
+
+//     .el-select.label {
+//         margin-bottom: .5em;
+//         /deep/input {
+//             padding-left: 0;
+//             color: black;
+//             border: 0;
+//         }
+//     }
+
+//     .buttons {
+//         position: absolute;
+//         bottom: 0;
+//         left: 0;
+//         right: 0;
+//         padding: 12px $padding-width;
+//         box-shadow: 0 -1px rgba($color: #000000, $alpha: .08);
+//         display: flex;
+//         justify-content: flex-end;
+//         background-color: white;
+//     }
+// }
+
+// .prepend-select {
+//     width: 135px;
+// }
+
+// .page-tips {
+//     margin-bottom: 16px;
+//     color: #ff6666;
+//     a {
+//         color: #66a3ff;
+//     }
+
+//     &::before {
+//         content: "温馨提示: ";
+//     }
+// }
+
+// .batch-split {
+//     margin-left: 30px;
+//     margin-right: 30px;
+//     height: 10px;
+//     border-left: 1px solid rgba($color: #000000, $alpha: .2);
+// }

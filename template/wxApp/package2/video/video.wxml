@@ -1,0 +1,4 @@
+<video wx:if="{{ !!url }}" src="{{url}}"
+    autoplay="true"></video>
+
+<view wx:else>没有传入视频文件地址</view>

@@ -1,0 +1,4 @@
+<view class="page">
+	<navigator wx:for="{{ pages }}" wx:key="path"
+		url="{{ item.path }}">{{ item.name }}</navigator>
+</view>

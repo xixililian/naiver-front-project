@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "package1/index/index",
+    "package1/welcome/welcome",
+    "package1/login/login",
+    "package1/agreement/agreement"
+  ],
+  "subpackages": [
+    {
+      "root": "package2",
+      "pages": [
+        "video/video"
+      ]
+    }
+  ],
+  "sitemapLocation": "sitemap.json"
+}

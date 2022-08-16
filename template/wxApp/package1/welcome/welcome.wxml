@@ -1,0 +1,3 @@
+<button bindtap="handleButtonTap">
+    <view>欢迎使用“金顶管家”</view>
+</button>

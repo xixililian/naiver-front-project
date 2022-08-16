@@ -1,0 +1,18 @@
+{
+    "name": "naiver-front-project",
+    "version": "1.0.0",
+    "description": "create a personal front_end project, includes some basic files and options",
+    "main": "index.js",
+    "scripts": {},
+    "author": "naiver",
+    "license": "MIT",
+    "bin": {
+        "naiver": "bin/index.js"
+    },
+    "dependencies": {
+        "co": "^4.0.6",
+        "co-prompt": "^1.0.0",
+        "commander": "^6.0.0",
+        "fs-extra": "^9.0.1"
+    }
+}

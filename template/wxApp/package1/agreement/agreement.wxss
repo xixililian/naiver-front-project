@@ -1,0 +1,27 @@
+page {
+  padding: 1em;
+  line-height: 2;
+  font-size: 28rpx;
+  box-sizing: border-box;
+  color: #333333;
+}
+
+.title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 32rpx;
+}
+
+.section-title {
+  margin-top: 1em;
+  font-weight: bold;
+}
+
+.paragraph, .list {
+  margin-top: 0.75em;
+}
+
+.list-item {
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+}

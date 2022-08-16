@@ -1,0 +1,15 @@
+.page {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 1rpx;
+    padding-left: .5em;
+}
+
+navigator {
+    margin-top: .5em;
+    margin-right: .5em;
+    padding: .5em 1em;
+    text-align: center;
+    border-radius: 6rpx;
+    border: 1rpx solid rgba(0, 0, 0, .15);
+}

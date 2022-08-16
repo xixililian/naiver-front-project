@@ -1,0 +1,5 @@
+page {
+    font-size: 28rpx;
+    text-align: justify;
+    line-height: 1;
+}
