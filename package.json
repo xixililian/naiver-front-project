@@ -1,6 +1,6 @@
 {
     "name": "naiver-front-project",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "description": "create a personal front_end project, includes some basic files and options",
     "main": "index.js",
     "scripts": {},
