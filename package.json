@@ -15,5 +15,8 @@
         "commander": "^6.0.0",
         "fs-extra": "^9.0.1"
     },
-    "repository": "gitee:xixililian/naiver-front-project"
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/xixililian/naiver-front-project"
+    }
 }
