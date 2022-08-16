@@ -4,22 +4,20 @@ a command tool to create front project with basic files and codes, generate new 
 
 it is not a Widely applicable tool, because it based on my provately experence. but, it probably just useful for you.
 
-它不是一个广泛适用的工具，因为它只是根据我的个人的项目经验而写得。不过，也许它刚好对你有用。
+它可能不是一个广泛适用的工具，因为它只是根据我个人的项目经验而来。不过，也许它刚好对你有用。
 
 
-userage
-===
+# usage
 
-创建项目
----
+
+## 创建项目
 
     npm install -global naiver-front-project
     naiver create <projectName>
 
+根据选择的类型，在当前目录创建一个项目：
 
-会在当前目录创建一个项目，根据选择的类型会创建：
-
-- v2e: vue2 + elementUI 的项目
+- v2e(默认): vue2 + elementUI 的项目
 - wxApp: 微信 minapp + sass 的项目
 
 创建的项目都包含了基本的结构和基础代码：
@@ -33,8 +31,6 @@ userage
 - ajax的可配置的封装函数
 - 一些实用的函数、方法、与类
 
-
-创建文件
----
+## 创建文件
 
     待完善
