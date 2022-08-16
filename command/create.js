@@ -66,7 +66,7 @@ function handleError(error) {
 module.exports = (projectName, cmd) => {
 
     co(function* () {
-        let templateName = yield prompt("template name(v2e): ");
+        let templateName = yield prompt("template name [v2e (default), wxApp]: ");
         if (!templateName) templateName = "v2e";
 
         if (!templateConfig[templateName]) {

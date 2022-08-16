@@ -4,7 +4,7 @@
     "description": "create a personal front_end project, includes some basic files and options",
     "main": "index.js",
     "scripts": {},
-    "author": "naiver",
+    "author": "xixililian",
     "license": "MIT",
     "bin": {
         "naiver": "bin/index.js"
@@ -14,5 +14,6 @@
         "co-prompt": "^1.0.0",
         "commander": "^6.0.0",
         "fs-extra": "^9.0.1"
-    }
+    },
+    "repository": "gitee:xixililian/naiver-front-project"
 }
