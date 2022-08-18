@@ -1,0 +1,53 @@
+{
+    "name": "replace-name",
+    "version": "1.0.0",
+    "description": "说明文字",
+    "private": true,
+    "dependencies": {
+        "@babel/polyfill": "latest",
+        "axios": "latest",
+        "distpicker": "latest",
+        "echarts": "latest",
+        "fullpage.js": "^3.1.0",
+        "hover.css": "latest",
+        "jquery": "latest",
+        "moment": "latest",
+        "pikaday": "^1.8.2",
+        "ss-usual": "^0.1.61",
+        "swiper": "latest"
+    },
+    "devDependencies": {
+        "@babel/core": "latest",
+        "@babel/preset-env": "latest",
+        "babel-loader": "latest",
+        "clean-webpack-plugin": "latest",
+        "css-loader": "latest",
+        "file-loader": "latest",
+        "html-loader": "latest",
+        "html-webpack-plugin": "latest",
+        "mini-css-extract-plugin": "latest",
+        "optimize-css-assets-webpack-plugin": "latest",
+        "sass": "latest",
+        "sass-loader": "latest",
+        "style-loader": "latest",
+        "uglifyjs-webpack-plugin": "^2.2.0",
+        "webpack": "^4.42.1",
+        "webpack-cli": "^3.3.11",
+        "webpack-dev-middleware": "^3.7.2",
+        "webpack-dev-server": "^3.11.0",
+        "webpack-merge": "^4.2.2"
+    },
+    "main": "index.js",
+    "scripts": {
+        "cms": "webpack-dev-server --config src/cms/webpack.config.js",
+        "cms-bld": "set NODE_ENV=production&&webpack --config src/cms/webpack.config.js",
+        "mcms": "webpack-dev-server --config src/mcms/webpack.config.js",
+        "mcms-bld": "set NODE_ENV=production&&webpack --config src/mcms/webpack.config.js",
+        "www": "webpack-dev-server --config src/www/webpack.config.js",
+        "www-bld": "set NODE_ENV=production&&webpack --config src/www/webpack.config.js",
+        "mww": "webpack-dev-server --config src/mww/webpack.config.js",
+        "mww-bld": "set NODE_ENV=production&&webpack --config src/mww/webpack.config.js"
+    },
+    "author": "xixililian",
+    "license": "MIT"
+}
