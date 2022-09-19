@@ -1,0 +1,21 @@
+// 这个文件用于 scss 文件 import，这样这些统一配置的变量和代码块可以在其他 scss 文件中使用
+
+@import "~ss-usual/style/common.scss";
+$color: #ad0c14;
+@mixin single_center_bg {
+  background-position: center;
+  background-repeat: no-repeat;
+}
+// @mixin scroll_body {
+//   height: auto;
+//   min-height: 100%;
+//   padding-right: 5px;
+//   box-sizing: border-box;
+// }
+@mixin unselectable {
+  -moz-user-select: none; /*火狐*/
+  -webkit-user-select: none;  /*webkit浏览器*/
+  -ms-user-select: none;   /*IE10*/
+  -khtml-user-select: none; /*早期浏览器*/
+  user-select: none;
+}

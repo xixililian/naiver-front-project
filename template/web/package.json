@@ -39,15 +39,9 @@
     },
     "main": "index.js",
     "scripts": {
-        "cms": "webpack-dev-server --config src/cms/webpack.config.js",
-        "cms-bld": "set NODE_ENV=production&&webpack --config src/cms/webpack.config.js",
-        "mcms": "webpack-dev-server --config src/mcms/webpack.config.js",
-        "mcms-bld": "set NODE_ENV=production&&webpack --config src/mcms/webpack.config.js",
-        "www": "webpack-dev-server --config src/www/webpack.config.js",
-        "www-bld": "set NODE_ENV=production&&webpack --config src/www/webpack.config.js",
-        "mww": "webpack-dev-server --config src/mww/webpack.config.js",
-        "mww-bld": "set NODE_ENV=production&&webpack --config src/mww/webpack.config.js"
+        "serve": "webpack-dev-server",
+        "build": "set NODE_ENV=production&&webpack"
     },
-    "author": "xixililian",
+    "author": "naiver",
     "license": "MIT"
 }

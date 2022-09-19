@@ -1,0 +1,11 @@
+@import "../../_public/common.scss";
+// 此处可以引入组件样式
+
+@mixin fix_border {
+  // 下面这个是调试的时候用的
+  outline: 1px solid yellow;
+}
+
+.swiper-slide img {
+  max-width: 100%;
+}

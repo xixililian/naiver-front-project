@@ -128,12 +128,14 @@ export default {
 						const item = pathList.find(it => it.webpath == currPath);
 						if (item) breadList.push({
 							name: item.menuname,
-							to: flag || (currPath == val.fullPath) ? "" : currPath
+							// to: flag || (currPath == val.fullPath) ? "" : currPath
+							to: flag || (!restPath.length) ? "" : currPath
 						})
 						else {
 							breadList.push({
 								name: val.meta.title,
-								to: flag || (currPath == val.fullPath) ? "" : currPath
+								// to: flag || (currPath == val.fullPath) ? "" : currPath
+								to: flag || (!restPath.length) ? "" : currPath
 							});
 							break;
 						}

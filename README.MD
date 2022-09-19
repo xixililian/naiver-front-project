@@ -17,8 +17,9 @@ it is not a Widely applicable tool, because it based on my provately experence. 
 
 根据选择的类型，在当前目录创建一个项目：
 
-- v2e(默认): vue2 + elementUI 的项目
-- wxApp: 微信 minapp + sass 的项目
+- v2e(默认): vue2 + elementUI 的项目, 需要node版本为 ~14.16.1
+- wxApp:     微信 minapp + sass 的项目
+- web:       原生多页面web + polyfill + sass 的项目
 
 创建的项目都包含了基本的结构和基础代码：
 

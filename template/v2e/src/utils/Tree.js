@@ -58,6 +58,11 @@ class Tree {
 
         return null;
     }
+
+    // 根据传入的条件，找出符合条件的节点
+    extract(filterFn) {
+        return this.flatArray.filter(filterFn)
+    }
 }
 
 export default Tree;
