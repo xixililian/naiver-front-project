@@ -1,0 +1,46 @@
+<!-- 上传和预览图片文件 -->
+<view class="upload">
+    <view class="item"
+        wx:for="{{files}}"
+        wx:key="item"
+    >
+        <image
+            class="item-image"
+            src="{{item.tempPath || baseUrl+item.path}}"
+            mode="aspectFill"
+            catch:tap="handleImageTap"
+            data-index="{{index}}"
+        />
+        <icon
+            class="item-icon"
+            type="clear"
+            size="16"
+            color="black"
+            catch:tap="handleDeleteTap"
+            data-index="{{index}}"
+        ></icon>
+    </view>
+
+    <view class="item"
+        wx:for="{{holdingFile}}"
+        wx:key="item"
+    >
+        <image
+            class="item-image"
+            src="{{item}}"
+            mode="aspectFill"
+        />
+    </view>
+    
+    <view class="item item-holder"
+        wx:if="{{files.length < limit}}"
+        catch:tap="handleHolderTap"
+    >
+        <image
+            class="item-camera"
+            src="./images/camera.png"
+            mode="widthFix"
+        />
+        <view class="placeholder">{{holdText}}</view>
+    </view>
+</view>

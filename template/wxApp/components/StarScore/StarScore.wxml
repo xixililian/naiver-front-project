@@ -1,0 +1,12 @@
+<!-- 五星打分 -->
+<view class="score">
+    <view
+        class="star {{item >= score ? 'stroke' : 'full'}}"
+        wx:for="{{total}}"
+        wx:key="item"
+        catch:tap="handleStarTap"
+        data-value="{{item+1}}"
+    >
+        <!-- {{ item >= score ? "☆" : "★" }} -->
+    </view>
+</view>

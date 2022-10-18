@@ -132,8 +132,10 @@ export default {
 							to: flag || (!restPath.length) ? "" : currPath
 						})
 						else {
+							let item = val.matched.find(it => it.path == currPath);
+							item = item || val;
 							breadList.push({
-								name: val.meta.title,
+								name: item.meta.title,
 								// to: flag || (currPath == val.fullPath) ? "" : currPath
 								to: flag || (!restPath.length) ? "" : currPath
 							});
